@@ -3,8 +3,8 @@ exports.config = {
   'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
 
   'capabilities': {
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+    'browserstack.user': process.env.BROWSERSTACK_USER || 'BROWSERSTACK_USERNAME',
+    'browserstack.key': process.env.BROWSERSTACK_ACCESSKEY || 'BROWSERSTACK_ACCESS_KEY',
     'build': 'protractor-browserstack',
     'name': 'local_test',
     "browserName": "iPhone",
@@ -13,6 +13,7 @@ exports.config = {
     "os": "ios",
     "os_version": "5.0",
     'browserstack.local': true,
+    'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
     'browserstack.debug': 'true'
   },
 
