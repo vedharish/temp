@@ -5,12 +5,12 @@ describe('BrowserStack Local Testing', function() {
     });
   });
   it('check only google', function() {
-    browser.driver.get('http://google.com').then(function() {
+    browser.driver.get('http://localhost:8000').then(function() {
       expect(browser.driver.getPageSource()).toMatch(/Up and running/i);
     });
   });
   it('check only not google', function() {
-    browser.driver.get('http://twitter.com').then(function() {
+    browser.driver.get('http://localhost:3000').then(function() {
       expect(browser.driver.getPageSource()).toMatch(/Up and running/i);
     });
   });
