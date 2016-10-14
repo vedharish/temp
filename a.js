@@ -17,6 +17,7 @@ bs_local.start(bs_local_args, function() {
   // stop the Local instance
   bs_local.stop(function() {
     console.log("Stopped BrowserStackLocal");
+    console.log("\n\nTrying to retrieve BrowserStackLocal binary logs --");
 
     fs.readFile('local.log', 'utf8', function (err, data) {
       if (err) {
