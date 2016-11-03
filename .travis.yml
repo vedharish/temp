@@ -4,3 +4,7 @@ node_js:
   - "6.1"
   - "5.11"
   - "iojs"
+script:
+  - while true; do echo .; sleep 1; done
+  - npm install
+  - npm test
