@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="com.browserstack.sample.JUnitParallelTest">
+<testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{0}" index="0" name="testSimple" package="com.browserstack.sample">
+<session>40e6433b2b5588764a37c1b8aa8a07ab0ba5eeb5</session>
+</testcase>
+<testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{1}" index="1" name="testSimple" package="com.browserstack.sample">
+<session>137cac90bb40a753611071b12e14f3c8bc483fea</session>
+</testcase>
+<testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{2}" index="2" name="testSimple" package="com.browserstack.sample">
+<session>2add6a516fbb1a7ad21dd997ee1aed7fe1dfffde</session>
+</testcase>
+<testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{3}" index="3" name="testSimple" package="com.browserstack.sample">
+<session>cb48b13eeb8b013f2db72b9c6c0103f22804f429</session>
+</testcase>
+</testsuite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="com.browserstack.sample.JUnitTest">
+<testcase class="JUnitTest" classname="com.browserstack.sample.JUnitTest" id="com.browserstack.sample.JUnitTest.testSimple{0}" index="0" name="testSimple" package="com.browserstack.sample">
+<session>8b14057862dbcc4afb3f464f489ff177d097c4df</session>
+</testcase>
+</testsuite>
