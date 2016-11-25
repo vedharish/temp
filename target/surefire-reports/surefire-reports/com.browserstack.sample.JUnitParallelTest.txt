@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.browserstack.sample.JUnitTest
+Test set: com.browserstack.sample.JUnitParallelTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.704 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.691 sec
