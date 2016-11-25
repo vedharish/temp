@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><testsuite name="com.browserstack.sample.JUnitTest">
 <testcase class="JUnitTest" classname="com.browserstack.sample.JUnitTest" id="com.browserstack.sample.JUnitTest.testSimple{0}" index="0" name="testSimple" package="com.browserstack.sample">
-<session>005fc5a9b20aef4a57046e13147342a2c980bb11</session>
+<session>ca8f61f4fbf40789d55c3411860d5b1e7c73e958</session>
 </testcase>
 </testsuite>

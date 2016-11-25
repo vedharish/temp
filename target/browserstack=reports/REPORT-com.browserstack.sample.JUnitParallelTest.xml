@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><testsuite name="com.browserstack.sample.JUnitParallelTest">
 <testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{0}" index="0" name="testSimple" package="com.browserstack.sample">
-<session>911bf00db44a7423c3ecb885e4f97a5841c58f68</session>
+<session>c54b9c597ce23f76aded3da1ec069779f05750e3</session>
 </testcase>
 <testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{1}" index="1" name="testSimple" package="com.browserstack.sample">
-<session>f9fef6dd083672fdd4d8ef8e112a31979eb980ec</session>
+<session>0666c1a71fce49fac5c11b19a22076c522641937</session>
 </testcase>
 <testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{2}" index="2" name="testSimple" package="com.browserstack.sample">
-<session>7371548c30a25f7efa57d14672c840abcda72b04</session>
+<session>e9dd20d4f84e6e1c9629816598f84ef6fe1cd881</session>
 </testcase>
 <testcase class="JUnitParallelTest" classname="com.browserstack.sample.JUnitParallelTest" id="com.browserstack.sample.JUnitParallelTest.testSimple{3}" index="3" name="testSimple" package="com.browserstack.sample">
-<session>ac77ef9179a59f752c1b4b1aa6a8d2a0df51923c</session>
+<session>92d29f8176d96130a5160737130e3e295778b8b1</session>
 </testcase>
 </testsuite>
