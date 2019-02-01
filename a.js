@@ -23,8 +23,12 @@ async function printResponse(url) {
 };
 
 async function run() {
-  await printResponse('http://platform.browserstack.com:45691');
-  await printResponse('http://platform.browserstack.com:45691/check');
+  try {
+    await printResponse('http://platform.browserstack.com:45691');
+    await printResponse('http://platform.browserstack.com:45691/check');
+  } catch(e) {
+    console.log("GOT ERROR", e, e.stack);
+  }
 }
 
 run();
