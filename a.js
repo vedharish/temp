@@ -1,29 +1,30 @@
-var browserstack = require('browserstack-local');
-var fs = require('fs');
+const http = require('http');
 
-//creates an instance of Local
-var bs_local = new browserstack.Local();
+async function printResponse(url) {
+  return new Promise((resolve, reject) => {
+    http.get(url, (resp) => {
+      let data = [];
 
-// replace <browserstack-accesskey> with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
-var bs_local_args = {  };
+      // A chunk of data has been recieved.
+      resp.on('data', (chunk) => {
+        data.push(chunk);
+      });
 
-// starts the Local instance with the required arguments
-bs_local.start(bs_local_args, function() {
-  console.log("Started BrowserStackLocal");
-
-  // check if BrowserStack local instance is running
-  console.log(bs_local.isRunning());
-
-  // stop the Local instance
-  bs_local.stop(function() {
-    console.log("Stopped BrowserStackLocal");
-    console.log("\n\nTrying to retrieve BrowserStackLocal binary logs --");
-
-    fs.readFile('local.log', 'utf8', function (err, data) {
-      if (err) {
-        return console.log(err);
-      }
-      console.log(data);
+      // The whole response has been received. Print out the result.
+      resp.on('end', () => {
+        console.log(Buffer.concat(data).toString());
+        resolve();
+      });
+    }).on("error", (err) => {
+      console.log("Error: " + err.message);
+      reject();
     });
   });
-});
+};
+
+async function run() {
+  await printResponse('http://platform.browserstack.com:45691');
+  await printResponse('http://platform.browserstack.com:45691/check');
+}
+
+run();

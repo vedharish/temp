@@ -4,7 +4,8 @@
   "readme": "Protractor Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Protractor and BrowserStack Automate",
   "scripts": {
-    "test": "node a.js"
+    "test": "node a.js",
+    "build": "npm run test"
   },
   "repository": {
     "type": "git",
