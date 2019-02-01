@@ -26,9 +26,13 @@ async function run() {
   try {
     await printResponse('http://platform.browserstack.com:45691');
     await printResponse('http://platform.browserstack.com:45691/check');
+    return new Promise((resolve) => { resolve(0); });
   } catch(e) {
-    console.log("GOT ERROR", e, e.stack);
+    console.log("GOT ERROR", e);
+    return new Promise((resolve) => { resolve(1); });
   }
 }
 
-run();
+run().then((re) => {
+  process.exit(re);
+});
