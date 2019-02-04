@@ -19,3 +19,10 @@ steps:
       npm install
       npm run build
     displayName: 'npm install and build'
+
+steps:
+- task: browserstackcom.browserstack-vsts-extension.browserstack-config-task.BrowserStackConfig@0
+  displayName: 'BrowserStack configuration setup.'
+  inputs:
+    BrowserStackServiceEndPoint: 'Browserstack connection'
+    browserstackLocal: true
