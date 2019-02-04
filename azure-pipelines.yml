@@ -20,6 +20,8 @@ steps:
     inputs:
       BrowserStackServiceEndPoint: 'Browserstack connection'
       browserstackLocal: true
+      bsLocalOptions: '{"verbose": true, "log-file": "/browserstack/logs.txt"}'
+
 
   - script: |
       npm install
