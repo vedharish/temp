@@ -1,4 +1,5 @@
 const http = require('http');
+const ps = require('ps-node');
 
 async function printResponse(url) {
   return new Promise((resolve, reject) => {
@@ -22,10 +23,22 @@ async function printResponse(url) {
   });
 };
 
+async function printProcesses(processCommand) {
+  return new Promise((resolve, reject) => {
+    ps.lookup({
+      command: processCommand,
+    }, function(err, resultList ) {
+      console.log(err, resultList);
+      resolve();
+    });
+  });
+};
+
 async function run() {
   try {
-    await printResponse('http://platform.browserstack.com:45691');
-    await printResponse('http://platform.browserstack.com:45691/check');
+    await printProcesses('BrowserStackLocal');
+    // await printResponse('http://platform.browserstack.com:45691');
+    // await printResponse('http://platform.browserstack.com:45691/check');
     return new Promise((resolve) => { resolve(0); });
   } catch(e) {
     console.log("GOT ERROR", e);

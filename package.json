@@ -11,5 +11,8 @@
     "type": "git",
     "url": "https://github.com/browserstack/protractor-browserstack"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ps-node": "^0.1.6"
+  }
 }
