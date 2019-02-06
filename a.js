@@ -1,4 +1,5 @@
 const http = require('http');
+const fs = require('fs');
 const ps = require('ps-node');
 
 async function printResponse(url) {
@@ -37,6 +38,7 @@ async function printProcesses(processCommand) {
 async function run() {
   try {
     await printProcesses('BrowserStackLocal');
+    console.log(fs.readFileSync('~/asd.log'));
     // await printResponse('http://platform.browserstack.com:45691');
     // await printResponse('http://platform.browserstack.com:45691/check');
     return new Promise((resolve) => { resolve(0); });

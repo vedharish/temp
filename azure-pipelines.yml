@@ -20,7 +20,7 @@ steps:
     inputs:
       BrowserStackServiceEndPoint: 'Browserstack connection'
       browserstackLocal: true
-      bsLocalOptions: '--verbose true --log-file logs.txt'
+      bsLocalOptions: '--verbose true --log-file ~/asd.log'
 
 
   - script: |
