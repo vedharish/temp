@@ -20,7 +20,7 @@ steps:
     inputs:
       BrowserStackServiceEndPoint: 'Browserstack connection'
       browserstackLocal: true
-      bsLocalOptions: '{"verbose": true, "force-local": true}'
+      bsLocalOptions: '{"verbose":true,"logfile":"asd.log"}'
 
 
   - script: |
