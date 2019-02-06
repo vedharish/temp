@@ -38,7 +38,7 @@ async function printProcesses(processCommand) {
 async function run() {
   try {
     await printProcesses('BrowserStackLocal');
-    console.log(fs.readFileSync('$HOME/asd.log'));
+    // console.log(fs.readFileSync('$HOME/asd.log'));
     // await printResponse('http://platform.browserstack.com:45691');
     // await printResponse('http://platform.browserstack.com:45691/check');
     return new Promise((resolve) => { resolve(0); });
